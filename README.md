@@ -8,7 +8,7 @@ This project aims to build a production ready docker-compose file for Metabase.
 - [Run](#run)
 - [Roadmap](#roadmap)
 
-## Prepering
+## Preparing
 First, you need to create `.env` file;
 ```
 cp .env.example .env
