@@ -23,6 +23,9 @@ docker-compose up -d
 
 and then point to `localhost:3000`. It may take couple of minutes to get a response until containers are up and running. You may use PgAdmin4 in case needed from `localhots:3001`.
 
+## Notes
+If docker-compose hangs on the load, add `127.0.0.1 localunixsocket localunixsocket.local # these are for docker` to the /etc/hosts as per https://github.com/docker/for-mac/issues/286#issuecomment-241477285
+
 ## Roadmap
 - [ ] MongoDB setup at the start
 - [ ] Improve documentation
