@@ -3,6 +3,7 @@ version: "3.5"
 services:
 
   postgres:
+    container_name: postgres
     image: postgres:10
     volumes:
       - "./db_data:/var/lib/postgresql/data"
@@ -13,6 +14,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
 
   metabase:
+    container_name: metabase
     depends_on:
       - postgres
     image: metabase/metabase
@@ -30,6 +32,7 @@ services:
       MB_DB_HOST: postgres
 
   pgadmin:
+    container_name: pgadmin
     depends_on:
       - postgres
     image: dpage/pgadmin4
