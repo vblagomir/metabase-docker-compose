@@ -22,7 +22,8 @@ services:
       - "3000:3000"
     restart: always
     environment:
-      JAVA_TIMEZONE: Europe/Istanbul
+      JAVA_TIMEZONE: Europe/Berlin
+      JAVA_TOOL_OPTIONS: -Xmx1g
       MB_ENCRYPTION_SECRET_KEY: ${MB}
       MB_DB_TYPE: postgres
       MB_DB_DBNAME: metabase
